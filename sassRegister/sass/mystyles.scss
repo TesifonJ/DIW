@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$green-zelda: rgb(13,146,99);
+$olive: #d4ce46;
+$grey: #494b4b;
+$green-light: #4aba91;
+$green-lighter: #865b15;
+$gold-zelda: #e8c200;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $grey;
+$grey-light: $green-light;
+$primary: $green-zelda;
+$link: $olive;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+$info: $gold-zelda;
+
+// Update some of Bulma's component variables
+$body-background-color: $green-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+//Navbar Menu
+$navbar-background-color: $green-lighter;
+
+
+// Elements
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+// Utilities
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+// Base
+@import "../node_modules/bulma/sass/base/_all.sass";
+// Form
+@import "../node_modules/bulma/sass/form/_all.sass";
+// Layout
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+// Components
+@import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/components/menu.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+
+// Columns
+@import "../node_modules/bulma/sass/grid/_all.sass";
+
+// Helpers
+@import "../node_modules/bulma/sass/helpers/color.sass";
+@import "../node_modules/bulma/sass/helpers/flexbox.sass";
+@import "../node_modules/bulma/sass/helpers/typography.sass";
+@import "../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../node_modules/bulma/sass/helpers/overflow.sass";
+@import "../node_modules/bulma/sass/helpers/visibility.sass";
+
+
+
