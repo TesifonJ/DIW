@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@800&family=Roboto&display=swap');
+
+body {
+    background-image: url('./img/back.jpeg');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+

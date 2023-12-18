@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Zelda</title>
+
+    <script src="/js/modal.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <!-- Bulma Version 0.9.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+</head>
+
+<body>
+    <nav class="navbar is-primary has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand pl-4">
+            <a class="navbar-item">
+                <img src="./assets/linkBrand.png">
+                <h1 class="title is-capitalized is-italic pl-4">Mundo Zelda</h1>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div id="navMenu" class="navbar-menu has-background-primary">
+                    <a class="navbar-item has-text-light">
+                        Personaje
+                    </a>
+
+                    <a class="navbar-item has-text-light">
+                        Juegos
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link has-text-light">
+                            Plataformas
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Nintendo Switch
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                WII
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                WII U
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Nintendo DS
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <button class="navbar-item button is-primary is-inverted is-outlined js-modal-trigger"
+                            data-target="modal-js-example">Login</button>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <!-- Login form -->
+            <div class="is-flex is-justify-content-center">
+                <div class="column is-8">
+                    <div class="box p-6 px-10-desktop py-12-desktop has-background-white has-text-centered">
+                        <form action="#">
+                            <!-- Form Title -->
+                            <h3 class="title is-4 mt-4 mb-12" data-config-id="form-header">Welcome</h3>
+                            <!-- Form Email -->
+                            <div class="is-relative mb-2">
+                                <input class="input" type="email" placeholder="jms@gmail.com">
+                                <span
+                                    class="is-absolute is-top-0 is-left-0 -mt-2 ml-3 has-background-white has-text-grey-dark">Your
+                                    email address</span>
+                            </div>
+                            <!-- Form Password -->
+                            <div class="is-relative mb-2">
+                                <input class="input " type="password" placeholder="******">
+                                <span
+                                    class="is-absolute is-top-0 is-left-0 -mt-2 ml-3 has-background-white has-text-grey-dark">Password</span>
+                            </div>
+                            <!-- Form Remember -->
+                            <div class="field">
+                                <input id="switchExample" type="checkbox" name="switchExample"
+                                    class="switch is-rounded is-success">
+                                <label for="switchExample">Remember me</label>
+                            </div>
+                            <!-- Form Submit -->
+                            <button class="button is-primary is-fullwidth mb-4"
+                                data-config-id="primary-action">Login</button>
+
+
+                            <!-- Form Recover Password -->
+                            <small><a class="has-text-dark" data-config-id="secondary-action">Forgot
+                                    password?</a></small>
+                            <!-- Form Divider -->
+                            <div class="pt-6 mt-8">
+                                <!-- Sign with Facebook -->
+                                <a class="button is-dark is-fullwidth mb-4">
+                                    <span class="is-inline-block mr-2">
+                                        <svg width="7" height="12" viewbox="0 0 7 12" fill="none"
+                                            data-config-id="auto-svg-1-3">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.0898 11.8182V6.51074H5.90537L6.17776 4.4417H4.0898V3.12092C4.0898 2.52207 4.25864 2.11397 5.13515 2.11397L6.25125 2.11352V0.262891C6.05824 0.238289 5.39569 0.181885 4.62456 0.181885C3.01431 0.181885 1.9119 1.14594 1.9119 2.91601V4.4417H0.0908203V6.51074H1.9119V11.8182H4.0898Z"
+                                                fill="white"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="has-text-white" data-config-id="fb-action">Sign in with Facebook</span>
+                                </a>
+                                <!-- Sign with Twitter -->
+                                <a class="button is-info is-fullwidth">
+                                    <span class="is-inline-block mr-2">
+                                        <svg width="13" height="11" viewbox="0 0 13 11" fill="none"
+                                            data-config-id="auto-svg-2-3">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.5455 2.0974C12.0904 2.29904 11.6022 2.43579 11.0892 2.49684C11.613 2.18316 12.014 1.68562 12.204 1.09459C11.7127 1.38508 11.1703 1.59601 10.5924 1.71035C10.1296 1.21667 9.47138 0.90918 8.74128 0.90918C7.34059 0.90918 6.20489 2.04488 6.20489 3.4448C6.20489 3.64334 6.2273 3.83726 6.27057 4.0227C4.16298 3.91684 2.29411 2.90708 1.0433 1.37272C0.824652 1.74665 0.700269 2.18237 0.700269 2.64748C0.700269 3.52746 1.14837 4.30391 1.82825 4.75817C1.41259 4.74427 1.02166 4.62993 0.67942 4.43987V4.47154C0.67942 5.69995 1.55399 6.72516 2.71362 6.95849C2.50116 7.01567 2.27712 7.04734 2.04534 7.04734C1.88156 7.04734 1.72318 7.03112 1.56788 7.00021C1.89081 8.00843 2.8272 8.74161 3.93663 8.76171C3.06902 9.44159 1.97504 9.84565 0.786814 9.84565C0.582087 9.84565 0.38043 9.83328 0.181885 9.81088C1.30445 10.5317 2.63716 10.952 4.06952 10.952C8.73514 10.952 11.2854 7.08752 11.2854 3.73607L11.2769 3.40773C11.7752 3.05231 12.2063 2.60577 12.5455 2.0974Z"
+                                                fill="white"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="has-text-white" data-config-id="twitter-action">Sign in with
+                                        Twitter</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Login form -->
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-2"></div>
+
+            <div class="column is-one-quarter has-text-centered">
+                <div class="card has-background-primary has-shadow p-4">
+                    <div class="card-image has-text-centered">
+                        <figure class="image is-128x128 is-inline-block">
+                            <img src="./assets/link.webp">
+                        </figure>
+                    </div>
+
+                    <div class="card-content has-background-light">
+                        <h1 class="title">Link</h1>
+                        <p class="has-text-justified">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                            accusamus commodi id numquam laboriosam
+                            error minus deserunt corporis, at consequuntur molestiae deleniti officiis distinctio sunt
+                            perferendis. Ex expedita minima repellat.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-text-centered">
+                <div class="card has-background-primary has-shadow p-4">
+                    <div class="card-image has-text-centered">
+                        <figure class="image is-128x128 is-inline-block">
+                            <img src="./assets/linkBrand.png">
+                        </figure>
+                    </div>
+                    <div class="card-content has-background-light">
+                        <h1 class="title">Zelda</h1>
+                        <p class="has-text-justified">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                            accusamus commodi id numquam laboriosam
+                            error minus deserunt corporis, at consequuntur molestiae deleniti officiis distinctio sunt
+                            perferendis. Ex expedita minima repellat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-text-centered">
+                <div class="card has-background-primary has-shadow p-4">
+                    <div class="card-image has-text-centered">
+                        <figure class="image is-128x128 is-inline-block">
+                            <img src="./assets/linkBrand.png">
+                        </figure>
+                    </div>
+                    <div class="card-content has-background-light">
+                        <h1 class="title">Hola</h1>
+                        <p class="has-text-justified">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                            accusamus commodi id numquam laboriosam
+                            error minus deserunt corporis, at consequuntur molestiae deleniti officiis distinctio sunt
+                            perferendis. Ex expedita minima repellat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-2"></div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+                (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+
+                $trigger.addEventListener('click', () => {
+                    openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    closeAllModals();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

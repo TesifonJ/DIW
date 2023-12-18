@@ -1,0 +1,76 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#navbar-top {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid rgb(235, 235, 235);
+
+}
+
+nav div h1 {
+    margin-left: .5em;
+    font-size: 2em;
+
+}
+
+#div-nav-title {
+    flex-grow: 2;
+
+}
+
+#div-nav-itemgroup {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    font-size: 1.5rem;
+
+}
+
+.div-navitem {
+    margin-top: 1em;
+}
+
+.div-navitem a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 77vh;
+    
+}
+
+.main-group {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.main-item {
+    display: flex;
+
+}
+
+.aside-item-menu {
+    display: flex;
+    flex-direction: column;
+    
+    flex-grow: 1;
+}
+
+.aside-item a {
+    flex-grow: 1;
+    background-color: rgb(238, 237, 237);
+    border: solid black;
+}
