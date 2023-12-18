@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/mystyles.css">
+    <!-- Scripts para el funcionamiento de los componentes de Bulma -->
+    <script src="./assets/js/bulma.js"> </script>
+    <!-- CDN para importar iconos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar Top -->
+    <nav class="navbar has-background-primary ">
+        <!-- Navbar Brand -->
+        <div class="navbar-brand is-align-items-center">
+            <a class="navbar-item is-size-4 p-2" href="index.html">
+                <img class="image is-64x64" src="./assets/img/zex.svg" alt="logo" width="auto">
+            </a>
+            <!-- Navbar Burger -->
+            <a class="navbar-burger navbar-menu-open is-flex-touch is-align-items-center is-justify-content-center"
+                role="button">
+                <!-- Burger Icon -->
+                <svg class="has-text-light" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M18 15.4688H0V17.7207H18V15.4688Z" fill="currentColor"></path>
+                    <path d="M11.0226 7.87402H0V10.126H11.0226V7.87402Z" fill="currentColor"></path>
+                    <path d="M18 0.279297H0V2.53127H18V0.279297Z" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Navbar Desktop -->
+        <div class="navbar-menu ml-10 is-align-items-center has-background-primary has-text-weight-bold">
+            <div class="navbar-start" style="width: 100%;">
+                <!-- Search Bar -->
+                <div class="mr-10 is-hidden-touch-only is-hidden-desktop-only is-hidden-widescreen-only is-flex  is-align-items-center"
+                    style="border-radius: 6px;">
+
+                    <span class="icon p-5">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Input Search -->
+                    <input class="input mr-2 has-background-white" style="border: none; box-shadow: none;" type="text"
+                        placeholder="Search">
+
+                    <select class="pl-6 py-3 has-background-primary has-text-white has-text-weight-bold has-text-left"
+                        style="border: 1px solid #E8E8E8; box-shadow: none; border-radius: 20px;">
+                        <option>All items</option>
+                        <option>All platforms</option>
+                        <option>All Categories</option>
+                    </select>
+                </div>
+
+                <a class="navbar-item ml-auto" href="#">Category</a>
+                <a class="navbar-item" href="#">Collection</a>
+                <a class="navbar-item" href="#">Story</a>
+                <a class="navbar-item mr-auto" href="#">Brand</a>
+            </div>
+
+            <div class="navbar-end">
+                <!-- Icono Corazon -->
+                <a class="navbar-item" href="#">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </a>
+
+                <!-- Icono Carro -->
+                <a class="navbar-item" href="#">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span class="is-inline-flex is-align-items-center is-justify-content-center has-background-white has-text-weight-bold" style="width: 24px; height: 24px; border-radius: 50% !important;">
+                        3
+                    </span>
+                </a>
+
+                <!-- Icono Usuario -->
+                <a class="navbar-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span class="mr-2 has-text-weight-bold">Robert</span>
+                    <span class="-mt-2">
+                        <div class="icon">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar Top -->
+
+    <!-- Navbar Menu Tablet/Mobile-->
+    <div
+        class=" menu navbar-side has-mw-sm is-hidden is-hidden-desktop is-fixed is-top-0 is-bottom-0 is-left-0 is-right-0 has-background-primary">
+        <div class="is-flex is-justify-content-space-between px-6">
+
+            <!-- User Img -->
+            <a class="has-text-light has-text-weight-semibold ">
+                <img class="image is-48x48" src="https://bulma.io/images/placeholders/128x128.png" alt="">
+                <span class="mr-2 has-text-weight-bold has-text-light">Username</span>
+            </a>
+            <!-- End User Img -->
+
+            <div class="is-flex is-align-items-center">
+                <!-- Icono Corazon -->
+                <a class="navbar-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </a>
+
+                <!-- Icono Carro -->
+                <a class="navbar-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span
+                        class="is-inline-flex is-align-items-center is-justify-content-center has-background-white has-text-weight-bold"
+                        style="width: 24px; height: 24px; border-radius: 50% !important;">
+                        3
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <input class="input m-4  has-background-light" style="border: none;" type="search" placeholder="Search">
+
+        <ul class="mb-0 is-size-6 menu-list">
+            <li class="mb-6"><a
+                    class=" menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet">Category</a>
+            </li>
+            <li class="mb-6"><a
+                    class=" menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet">Platform</a>
+            </li>
+            <li class="mb-6"><a
+                    class=" menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet">Buy</a>
+            </li>
+            <li><a class="menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet">SELL</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Navbar Menu Tablet/Mobile -->
+
+    <!-- Hero -->
+    <section data-section-id="1" data-share="" data-category="product-details-gradient"
+        data-component-id="95810a73_04_awz" class="section has-background-dark">
+        <div class="container">
+            <div class="has-mw-md has-mw-none-tablet mx-auto">
+                <div class="columns is-multiline">
+                    <div class="column is-6-tablet">
+                        <!-- Game Imgs -->
+                        <div>
+                            <img class="mb-5 is-block image is-fullwidth is-covered"
+                                src="https://gaming-cdn.com/images/products/15218/616x353/marvel-s-spider-man-2-ps5-playstation-5-juego-playstation-store-cover.jpg?v=1699978083"
+                                alt="mainImg">
+                            <div class="is-flex">
+                                <a class="mr-5 is-inline-block">
+                                    <img class="is-block image is-fullwidth"
+                                        src="https://gaming-cdn.com/images/products/15218/screenshot/marvel-s-spider-man-2-ps5-playstation-5-juego-playstation-store-wallpaper-2-thumbv2.jpg?v=1699978083"
+                                        alt="detailImg1">
+                                </a>
+                                <a class="mr-5 is-inline-block">
+                                    <img class="is-block image is-fullwidth"
+                                        src="https://gaming-cdn.com/images/products/15218/screenshot/marvel-s-spider-man-2-ps5-playstation-5-juego-playstation-store-wallpaper-4-thumbv2.jpg?v=1699978083"
+                                        alt="detailImg2">
+                                </a>
+                                <a class="mr-5 is-inline-block">
+                                    <img class="is-block image is-fullwidth"
+                                        src="https://gaming-cdn.com/images/products/15218/screenshot/marvel-s-spider-man-2-ps5-playstation-5-juego-playstation-store-wallpaper-4-thumbv2.jpg?v=1699978083"
+                                        alt="detailImg3">
+                                </a>
+                                <a class="is-inline-block">
+                                    <img class="is-block image is-fullwidth"
+                                        src="https://gaming-cdn.com/images/products/15218/screenshot/marvel-s-spider-man-2-ps5-playstation-5-juego-playstation-store-wallpaper-2-thumbv2.jpg?v=1699978083"
+                                        alt="detailImg4">
+                                </a>
+                            </div>
+                            <!-- End Game Imgs -->
+                        </div>
+                    </div>
+
+                    <div class="column is-6-tablet">
+                        <div class="has-mw-lg mx-auto">
+                            <div>
+                                <div class="mb-5 is-flex">
+                                    <button class="button is-ghost p-0 mr-1">
+                                        <i class="fa-solid fa-star" style="color: #FFBB29;"></i>
+                                    </button>
+                                    <button class="button is-ghost p-0 mr-1">
+                                        <i class="fa-solid fa-star" style="color: #FFBB29;"></i>
+                                    </button>
+                                    <button class="button is-ghost p-0 mr-1">
+                                        <i class="fa-solid fa-star" style="color: #FFBB29;"></i>
+                                    </button>
+                                    <button class="button is-ghost p-0 mr-1">
+                                        <i class="fa-solid fa-star" style="color: #FFBB29;"></i>
+                                    </button>
+                                    <button class="button is-ghost p-0">
+                                        <i class="fa-solid fa-star" style="color: #3d4a61;"></i>
+                                    </button>
+                                </div>
+                                <!-- Description -->
+                                <h3 class="title is-size-2 has-text-white mb-5" data-config-id="auto-txt-1-4">Los
+                                    Hombres-Que-Arañan II</h3>
+                                <span class="mb-5 is-block is-size-4 has-text-white has-text-weight-bold"
+                                    data-config-id="auto-txt-2-4">69,99 €</span>
+                                <p class="has-mw-md has-text-grey-lighter mb-6" data-config-id="auto-txt-3-4">Los
+                                    Spider-Men Peter Parker y Miles Morales se enfrentarán a la prueba definitiva de
+                                    poder con y sin la máscara mientras luchan para salvar la ciudad, el uno al otro y a
+                                    sus seres queridos del malvado Venom y de una nueva y peligrosa amenaza simbionte.
+                                    Explora la enorme Nueva York de Marvel con balanceos más rápidos y las nuevas
+                                    alarañas. Podrás cambiar rápidamente entre Peter y Miles para experimentar historias
+                                    diferentes,</p>
+                                <!-- More Info -->
+                                <ul class="has-text-light mb-8">
+                                    <li class="mb-1" data-config-id="auto-txt-4-4">Instalación: Cómo activar tu juego
+                                    </li>
+                                    <li class="mb-1" data-config-id="auto-txt-5-4">Desarrollador: Insomniac Games</li>
+                                    <li class="mb-1" data-config-id="auto-txt-6-4">Distribuidor: Sony Interactive
+                                        Entertainment</li>
+                                    <li class="mb-1" data-config-id="auto-txt-7-4"> Fecha de lanzamiento: 20 octubre
+                                        2023</li>
+                                    <li data-config-id="auto-txt-8-4"> Género: Acción, Aventura</li>
+                                </ul>
+                                <!-- Platform -->
+                                <span class="has-text-white mb-3 is-block has-text-weight-bold"
+                                    data-config-id="auto-txt-9-4">Plataformas:</span>
+                                <!--Platform Icons-->
+                                <div class="mb-10 is-flex is-align-items-center">
+                                    <a class="mr-3 is-inline-block is-size-3">
+                                        <i class="fa-brands fa-xbox"></i>
+                                    </a>
+                                    <a class="mr-3 is-inline-block is-size-3">
+                                        <i class="fa-brands fa-playstation"></i>
+                                    </a>
+                                    <a class="is-inline-block is-size-3">
+                                        <i class="fa-brands fa-steam"></i>
+                                    </a>
+                                </div>
+                                <!-- End Platform Icons -->
+
+                                <!-- Buttons -->
+                                <div class="is-flex mb-8 is-align-items-center">
+                                    <!-- Add to Cart -->
+                                    <button
+                                        class="button is-borderless has-background-gradient-red mr-8 px-24-tablet has-text-weight-semibold is-danger">Add
+                                        to Cart</button>
+                                    <a class="is-inline-block px-4">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+
+                                <!-- Buying more info -->
+                                <button
+                                    class="button py-8 is-dark is-flex is-justify-content-space-between is-fullwidth"
+                                    style="border-top: 1px solid rgba(33, 33, 36, 1);">
+                                    <span class="has-text-white has-text-weight-bold">Buying</span>
+                                    <span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </button>
+
+                                <!-- Selling more info -->
+                                <button
+                                    class="button py-8 is-dark is-flex is-justify-content-space-between is-fullwidth"
+                                    style="border-top: 1px solid rgba(33, 33, 36, 1);">
+                                    <span class="has-text-white has-text-weight-bold">Selling</span>
+                                    <span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+    <!-- Footer -->
+    <footer class=" pt-0-tablet pb-0-tablet pl-0-tablet has-background-light is-clipped p-6 is-flex">
+        <div class="columns is-multiline">
+            <div class="column is-3-desktop is-5-tablet px-6 py-20 has-background-white">
+                <div class="has-mw-xs mx-auto">
+                    <a class="mb-12 is-inline-block" href="#">
+                        <img class="image" src="" alt="">
+                    </a>
+                    <!-- Maps direction -->
+                    <div class="mb-12 has-text-weight-semibold">
+                        <p class="has-text-black is-uppercase">Our Store</p>
+                        <p>308 Negra Arroyo Lane, Albuquerque</p>
+                        <p>New Mexico</p>
+                        <div style="width: 100%"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Our%20Store%20%20308%20Negra%20Arroyo%20Lane,%20Albuquerque%20%20New%20Mexico+(Zex)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe></div>
+                    </div>
+                    <div class="mb-16 mb-40-tablet is-flex">
+                        <a class="mr-2 is-inline-block" href="#">
+                            <img class="image" src="" alt="">
+                        </a>
+                        <a class="mr-2 is-inline-block" href="#">
+                            <img class="image" src="" alt="">
+                        </a>
+                        <a class="is-inline-block" href="#">
+                            <img class="image" src="" alt="">
+                        </a>
+                    </div>
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-4">
+                            <img class="image" src="" alt="">
+                        </div>
+                        <div class="column is-4">
+                            <img class="image" src="" alt="">
+                        </div>
+                        <div class="column is-4">
+                            <img class="image" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Link pills -->
+            <div class="column is-9-desktop is-7-tablet px-6 py-20 pl-40-desktop"
+                style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                <ul class="mb-16 columns is-mobile is-multiline">
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Category</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Platforms</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Stores</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Games</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Sell</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Buy</a></li>
+                </ul>
+                <!-- End Link pills -->
+
+                <!-- Information Tabs -->
+                <div class="pb-20 ">
+                    <div class="tabs is-centered mt-6">
+                        <ul>
+                            <li><a class="mb-8 is-size-5 is-active" onclick="showTab('information')">Information</a>
+                            </li>
+                            <li><a class="mb-8 is-size-5" onclick="showTab('customer-service')">Customer Service</a>
+                            </li>
+                            <li><a class="mb-8 is-size-5" onclick="showTab('contact-us')">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tabs Content -->
+                    <!-- Information -->
+                    <div id="information-tab" class="tab-content">
+                        <ul>
+                            <li>
+                                <h3 class="title is-5">Welcome</h3>
+                            </li>
+                            <li>
+                                <p>Welcome to our platform for buying and selling second-hand video games. Here you'll
+                                    find a wide selection of video games for different platforms.</p>
+                            </li>
+                            <li>
+                                <h3 class="title is-5">How It Works?</h3>
+                            </li>
+                            <li>
+                                <p>Browse through our catalog, choose the video games that interest you, and make your
+                                    purchase securely. You can also sell your used video games to other users.</p>
+                            </li>
+                            <li>
+                                <h3 class="title is-5">Quality Guarantee</h3>
+                            </li>
+                            <li>
+                                <p>We strive to ensure the quality of all video games on our platform. Each game
+                                    undergoes a review process before being listed.</p>
+                            </li>
+                            <li>
+                                <h3 class="title is-5">Shipping and Payments</h3>
+                            </li>
+                            <li>
+                                <p>We offer fast and secure shipping options. We accept various payment methods for your
+                                    convenience.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Information -->
+                    <!-- Customer Service -->
+                    <div id="customer-service-tab" class="tab-content" style="display: none;">
+                        <ul class="mb-0">
+                            <li><a class="has-text-primary is-size-6" href="#">Investor Relations</a></li>
+                            <li><a class="has-text-primary is-size-6" href="#">Reward Program</a></li>
+                            <li><a class="has-text-primary is-size-6" href="#">Delivery Information</a></li>
+                            <li><a class="has-text-primary is-size-6" href="#">Paying by Invoice</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- End Customer Service -->
+                    <!-- Contact Us -->
+                    <div id="contact-us-tab" class="tab-content" style="display: none;">
+                        <div class="column is-4-desktop is-5-tablet">
+                            <ul>
+                                <li>
+                                    <p class="mb-2">Mobile</p>
+                                    <a class="has-text-info is-size-6" href="#">+33 666 666 666</a>
+                                </li>
+                                <li>
+                                    <p class="mb-2">Email</p>
+                                    <a class="has-text-info is-size-6" href="#">contact@zexstore.com</a>
+                                </li>
+                                <li>
+                                    <p class="mb-2">Live Chat</p>
+                                    <a class="has-text-info is-size-6" href="#">zexstore</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Contact Us -->
+                </div>
+                <!-- End Tabs Content -->
+            </div>
+            <div class="mt-8 pb-32 pb-0-desktop is-relative">
+                <p class="has-text-weight-semibold">2023 Jesús Maldonado Suárez 2º DAW CIFP Ausiás March</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Scripts -->
+    <script>
+        // Función para mostrar el contenido de las tarjetas
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = './gameInfo';
+            });
+        });
+
+        function showTab(tabId) {
+            // Oculta todos los contenidos de pestañas
+            document.querySelectorAll('.tab-content').forEach(tabContent => {
+                tabContent.style.display = 'none';
+            });
+
+            // Muestra el contenido de la pestaña seleccionada
+            document.getElementById(tabId + '-tab').style.display = 'block';
+
+            // Marca como activa la pestaña seleccionada
+            document.querySelectorAll('.tabs a').forEach(tabLink => {
+                tabLink.classList.remove('is-active');
+            });
+            document.querySelector('.tabs a[href="#' + tabId + '"]').classList.add('is-active');
+        }
+    </script>
+
+
+</body>
+
+</html>

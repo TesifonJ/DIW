@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/mystyles.css">
+    <!-- Scripts para el funcionamiento de los componentes de Bulma -->
+    <script src="./assets/js/bulma.js"> </script>
+    <!-- CDN para importar iconos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <!-- Navbar Top -->
+    <nav class="navbar has-background-primary ">
+        <!-- Navbar Brand -->
+        <div class="navbar-brand is-align-items-center">
+            <a class="navbar-item is-size-4 p-2" href="#">
+                <img class="image is-64x64" src="./assets/img/zex.svg" alt="logo" width="auto">
+            </a>
+            <!-- Navbar Burger -->
+            <a class="navbar-burger navbar-menu-open is-flex-touch is-align-items-center is-justify-content-center"
+                role="button">
+                <!-- Burger Icon -->
+                <svg class="has-text-light" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M18 15.4688H0V17.7207H18V15.4688Z" fill="currentColor"></path>
+                    <path d="M11.0226 7.87402H0V10.126H11.0226V7.87402Z" fill="currentColor"></path>
+                    <path d="M18 0.279297H0V2.53127H18V0.279297Z" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Navbar Desktop -->
+        <div class="navbar-menu ml-10 is-align-items-center has-background-primary has-text-weight-bold">
+            <div class="navbar-start" style="width: 100%;">
+                <!-- Search Bar -->
+                <div class="mr-10 is-hidden-touch-only is-hidden-desktop-only is-hidden-widescreen-only is-flex  is-align-items-center"
+                    style="border-radius: 6px;">
+
+                    <span class="icon p-5">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Input Search -->
+                    <input class="input mr-2 has-background-white" style="border: none; box-shadow: none;" type="text"
+                        placeholder="Search">
+
+                    <select class="pl-6 py-3 has-background-primary has-text-white has-text-weight-bold has-text-left"
+                        style="border: 1px solid #E8E8E8; box-shadow: none; border-radius: 20px;">
+                        <option>All items</option>
+                        <option>All platforms</option>
+                        <option>All Categories</option>
+                    </select>
+                </div>
+
+                <a class="navbar-item ml-auto" href="#">Category</a>
+                <a class="navbar-item" href="#">Collection</a>
+                <a class="navbar-item" href="#">Story</a>
+                <a class="navbar-item mr-auto" href="#">Brand</a>
+            </div>
+
+            <div class="navbar-end">
+                <!-- Icono Corazon -->
+                <a class="navbar-item" href="#">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </a>
+
+                <!-- Icono Carro -->
+                <a class="navbar-item" href="#">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span class="is-inline-flex is-align-items-center is-justify-content-center has-background-white has-text-weight-bold" style="width: 24px; height: 24px; border-radius: 50% !important;">
+                        3
+                    </span>
+                </a>
+
+                <!-- Icono Usuario -->
+                <a class="navbar-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span class="mr-2 has-text-weight-bold">Robert</span>
+                    <span class="-mt-2">
+                        <div class="icon">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar Top -->
+
+    <!-- Navbar levels info -->
+    <nav class="level has-background-primary-dark my-1 is-hidden-mobile">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading is-size-5-desktop has-text-weight-bold has-text-info-light">Games Sold</p>
+            <p class="title is-size-5-desktop has-text-weight-bold">3,456</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading is-size-5-desktop has-text-weight-bold has-text-info-light">Games Bought</p>
+            <p class="title is-size-5-desktop has-text-weight-bold">7,893</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading is-size-5-desktop has-text-weight-bold has-text-info-light">Total Stock</p>
+            <p class="title is-size-5-desktop has-text-weight-bold">123K</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading is-size-5-desktop has-text-weight-bold has-text-info-light">ACTIVE USERS</p>
+            <p class="title is-size-5-desktop has-text-weight-bold">456K</p>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar levels info -->
+
+    <!-- Notification -->
+    <div class="py-2 has-background-gradient-red notification m-0">
+        <button class="delete"></button>
+        <div class="is-flex is-justify-content-center is-align-items-center ">
+            <p class="has-text-light is-size-7 has-text-weight-bold">Hi, you're new here! Get 20% off card!</p>
+        </div>
+    </div>
+    <!-- End Notification -->
+
+    <!-- Navbar Menu Tablet/Mobile-->
+    <div class=" menu navbar-side has-mw-sm is-hidden is-hidden-desktop is-fixed is-top-0 is-bottom-0 is-left-0 is-right-0 has-background-primary">
+        <div class="is-flex is-justify-content-space-between px-6">
+            
+            <!-- User Img -->
+            <a class="has-text-light has-text-weight-semibold " href="#">
+                <img class="image is-48x48" src="https://bulma.io/images/placeholders/128x128.png" alt="">
+                <span class="mr-2 has-text-weight-bold has-text-light">Username</span>
+            </a>
+            <!-- End User Img -->
+
+            <div class="is-flex is-align-items-center">
+                <!-- Icono Corazon -->
+                <a class="navbar-item" href="#">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </a>
+
+                <!-- Icono Carro -->
+                <a class="navbar-item" href="#">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span class="is-inline-flex is-align-items-center is-justify-content-center has-background-white has-text-weight-bold" style="width: 24px; height: 24px; border-radius: 50% !important;">
+                        3
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <input class="input m-4  has-background-light" style="border: none;" type="search" placeholder="Search">
+
+        <ul class="mb-0 is-size-6 menu-list">
+            <li class="mb-6"><a class=" menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet"
+                    href="#">Category</a></li>
+            <li class="mb-6"><a class=" menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet"
+                    href="#">Platform</a></li>
+            <li class="mb-6"><a class=" menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet" href="#">Buy</a>
+            </li>
+            <li><a class="menu-label has-text-light has-text-weight-semibold is-size-6-mobile is-size-4-tablet" href="#">SELL</a></li>
+        </ul>
+    </div>
+    <!-- End Navbar Menu Tablet/Mobile -->
+
+    <!-- Main -->
+    <section class="section">
+        <div class="container">
+            <!-- Separador -->
+            <div class="mb-16 mb-20-desktop">
+                <div class="is-flex is-align-items-center">
+                    <div class="has-background-grey" style="height: 1px; width: 100%;"></div>
+                </div>
+            </div>
+            <!-- End Separador -->
+
+            <!-- Cards container -->
+            <div class="mb-20">
+                <div class="container">
+                    <div class="columns is-multiline p-6">
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+                            
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/15218/380x218/marvel-s-spider-man-2-ps5-playstation-5-juego-playstation-store-cover.jpg?v=1699978083"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media ">
+                                        <div class="media-content">
+                                            <p class="title is-size-5-tablet is-size-5-mobile">Los Hombres-Que-Arañan II</p>
+                                            <p class="subtitle is-size-6-tablet is-size-6-mobile">Xbox One</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p class="subtitle is-size-6-tablet is-size-6-mobile"><strong>Vender:</strong> 59,99 €</p>
+                                        <p class="subtitle is-size-6-tablet is-size-6-mobile"><strong>Comprar:</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/8863/380x218/cities-skylines-ii-pc-juego-steam-cover.jpg?v=1700434800"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-size-5-tablet is-size-5-mobile">Concejal De Urbanismo II</p>
+                                            <p class="subtitle is-size-6-tablet is-size-6-mobile">Play Station 1</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p class="subtitle is-size-6-tablet is-size-6-mobile"><strong>Venta:</strong> 59,99 €</p>
+                                        <p class="subtitle is-size-6-tablet is-size-6-mobile"><strong>Compra:</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/8855/380x218/lies-of-p-pc-juego-steam-cover.jpg?v=1700434800"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-size-5-tablet">Pinocho El Embustero</p>
+                                            <p class="subtitle is-size-6-tablet">Xbox One</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p class="subtitle is-size-6-tablet"><strong>Venta:</strong> 59,99 €</p>
+                                        <p class="subtitle is-size-6-tablet"><strong>Compra:</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/9665/380x218/ratchet-clank-rift-apart-pc-juego-steam-europe-cover.jpg?v=1697644479"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-size-5-tablet">Ramon & Carlos</p>
+                                            <p class="subtitle is-size-6-tablet">Play Station 5</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p class="subtitle is-size-6-tablet"><strong>Venta:</strong> 59,99 €</p>
+                                        <p class="subtitle is-size-6-tablet"><strong>Compra:</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/5679/380x218/red-dead-redemption-2-pc-juego-rockstar-cover.jpg?v=1647026658"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-size-5-tablet">Rojo Muerto Redencion II</p>
+                                            <p class="subtitle is-size-6-tablet">Play Station 5</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p class="subtitle is-size-6-tablet"><strong>Venta:</strong> 59,99 €</p>
+                                        <p class="subtitle is-size-6-tablet"><strong>Compra:</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/15227/380x218/metal-gear-solid-master-collection-version-pc-juego-steam-europe-cover.jpg?v=1698156104"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-size-5-tablet">Engranaje Metalico</p>
+                                            <p class="subtitle is-size-6-tablet">Xbox One</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p class="subtitle is-size-6-tablet"><strong>Venta:</strong> 59,99 €</p>
+                                        <p class="subtitle is-size-6-tablet"><strong>Compra:</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/4824/380x218/elden-ring-pc-juego-steam-europe-cover.jpg?v=1693544549"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-size-5-tablet">Anillo Octogenario</p>
+                                            <p class="subtitle is-size-6-tablet">Play Station 5</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p><strong>Precio</strong> 59,99 €</p>
+                                        <p><strong>Precio</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="column item is-11-mobile is-5-tablet is-3-desktop has-text-centered">
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-1by5">
+                                        <img src="https://gaming-cdn.com/images/products/840/380x218/cyberpunk-2077-pc-juego-gog-com-cover.jpg?v=1686577949"
+                                            alt="videogameImg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <p class="title is-4 is-size-5-tablet">Gamberro Cibernetico</p>
+                                            <p class="subtitle is-6 is-size-6-tablet">PC</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p><strong> Venta:</strong> 59,99 €</p>
+                                        <p><strong>Compra:</strong> 30,00 €</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Cards container -->
+            <div class="has-text-centered"><a class="button is-primary" href="#">Mostrar más</a></div>
+
+        </div>
+        </div>
+    </section>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class=" pt-0-tablet pb-0-tablet pl-0-tablet has-background-light is-clipped p-6 is-flex">
+        <div class="columns is-multiline">
+            <div class="column is-3-desktop is-5-tablet px-6 py-20 has-background-white">
+                <div class="has-mw-xs mx-auto">
+                    <a class="mb-12 is-inline-block" href="#">
+                        <img class="image" src="" alt="">
+                    </a>
+                    <!-- Maps direction -->
+                    <div class="mb-12 has-text-weight-semibold">
+                        <p class="has-text-black is-uppercase">Our Store</p>
+                        <p>308 Negra Arroyo Lane, Albuquerque</p>
+                        <p>New Mexico</p>
+                        <div style="width: 100%"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Our%20Store%20%20308%20Negra%20Arroyo%20Lane,%20Albuquerque%20%20New%20Mexico+(Zex)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe></div>
+                    </div>
+                    <div class="mb-16 mb-40-tablet is-flex">
+                        <a class="mr-2 is-inline-block" href="#">
+                            <img class="image" src="" alt="">
+                        </a>
+                        <a class="mr-2 is-inline-block" href="#">
+                            <img class="image" src="" alt="">
+                        </a>
+                        <a class="is-inline-block" href="#">
+                            <img class="image" src="" alt="">
+                        </a>
+                    </div>
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-4">
+                            <img class="image" src="" alt="">
+                        </div>
+                        <div class="column is-4">
+                            <img class="image" src="" alt="">
+                        </div>
+                        <div class="column is-4">
+                            <img class="image" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Link pills -->
+            <div class="column is-9-desktop is-7-tablet px-6 py-20 pl-40-desktop"
+                style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                <ul class="mb-16 columns is-mobile is-multiline">
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Category</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Platforms</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Stores</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Games</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Sell</a></li>
+                    <li class="column is-narrow mb-3"><a class="button py-0 px-5 is-white has-text-centered is-rounded"
+                            style="height: 40px;" href="#">Buy</a></li>
+                </ul>
+                <!-- End Link pills -->
+
+                <!-- Information Tabs -->
+                <div class="pb-20 ">
+                    <div class="tabs is-centered mt-6">
+                        <ul>
+                            <li><a class="mb-8 is-size-5 is-active" onclick="showTab('information')">Information</a>
+                            </li>
+                            <li><a class="mb-8 is-size-5" onclick="showTab('customer-service')">Customer Service</a>
+                            </li>
+                            <li><a class="mb-8 is-size-5" onclick="showTab('contact-us')">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tabs Content -->
+                    <!-- Information -->
+                    <div id="information-tab" class="tab-content">
+                        <ul>
+                            <li>
+                                <h3 class="title is-5">Welcome</h3>
+                            </li>
+                            <li>
+                                <p>Welcome to our platform for buying and selling second-hand video games. Here you'll
+                                    find a wide selection of video games for different platforms.</p>
+                            </li>
+                            <li>
+                                <h3 class="title is-5">How It Works?</h3>
+                            </li>
+                            <li>
+                                <p>Browse through our catalog, choose the video games that interest you, and make your
+                                    purchase securely. You can also sell your used video games to other users.</p>
+                            </li>
+                            <li>
+                                <h3 class="title is-5">Quality Guarantee</h3>
+                            </li>
+                            <li>
+                                <p>We strive to ensure the quality of all video games on our platform. Each game
+                                    undergoes a review process before being listed.</p>
+                            </li>
+                            <li>
+                                <h3 class="title is-5">Shipping and Payments</h3>
+                            </li>
+                            <li>
+                                <p>We offer fast and secure shipping options. We accept various payment methods for your
+                                    convenience.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Information -->
+                    <!-- Customer Service -->
+                    <div id="customer-service-tab" class="tab-content" style="display: none;">
+                        <ul class="mb-0">
+                            <li><a class="has-text-primary is-size-6" href="#">Investor Relations</a></li>
+                            <li><a class="has-text-primary is-size-6" href="#">Reward Program</a></li>
+                            <li><a class="has-text-primary is-size-6" href="#">Delivery Information</a></li>
+                            <li><a class="has-text-primary is-size-6" href="#">Paying by Invoice</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- End Customer Service -->
+                    <!-- Contact Us -->
+                    <div id="contact-us-tab" class="tab-content" style="display: none;">
+                        <div class="column is-4-desktop is-5-tablet">
+                            <ul>
+                                <li>
+                                    <p class="mb-2">Mobile</p>
+                                    <a class="has-text-info is-size-6" href="#">+33 666 666 666</a>
+                                </li>
+                                <li>
+                                    <p class="mb-2">Email</p>
+                                    <a class="has-text-info is-size-6" href="#">contact@zexstore.com</a>
+                                </li>
+                                <li>
+                                    <p class="mb-2">Live Chat</p>
+                                    <a class="has-text-info is-size-6" href="#">zexstore</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Contact Us -->
+                </div>
+                <!-- End Tabs Content -->
+            </div>
+            <div class="mt-8 pb-32 pb-0-desktop is-relative">
+                <p class="has-text-weight-semibold">2023 Jesús Maldonado Suárez 2º DAW CIFP Ausiás March</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Scripts -->
+    <script>
+        // Función para mostrar el contenido de las tarjetas
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = './gameInfo';
+            });
+        });
+
+        function showTab(tabId) {
+            // Oculta todos los contenidos de pestañas
+            document.querySelectorAll('.tab-content').forEach(tabContent => {
+                tabContent.style.display = 'none';
+            });
+
+            // Muestra el contenido de la pestaña seleccionada
+            document.getElementById(tabId + '-tab').style.display = 'block';
+
+            // Marca como activa la pestaña seleccionada
+            document.querySelectorAll('.tabs a').forEach(tabLink => {
+                tabLink.classList.remove('is-active');
+            });
+            document.querySelector('.tabs a[href="#' + tabId + '"]').classList.add('is-active');
+        }
+    </script>
+
+</body>
+
+</html>
